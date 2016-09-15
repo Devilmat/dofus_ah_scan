@@ -9,7 +9,7 @@ print "\n\nDeuxieme pcap"
 liste2 = recuperer_infos_paquets("ailes_moskito.pcap")
 
 for i in range(0, len(liste1)):
-	print "Paquet", i
+	print "Paquet",i
 	if liste1[i].haslayer(Raw):
 		print liste1[i].getlayer(Raw).load.encode('hex')
 	else:
